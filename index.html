@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's website.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/action.js"></script>
+    <script>
+        function award(score){           
+            // alert(typeof score);
+            if(score == 100){
+                alert("奖励一辆宝马！");
+            } else if(score >= 90){
+                alert("奖励一个iphone15！");
+            } else if(score >= 60){
+                alert("奖励一个笔记本。");
+            } else{
+                alert("对不起，你的分数得不到任何奖励。");
+            }
+        }
+        // var score = prompt("请输入你的分数");
+        // award(score);
+        function marry(height, price, face){
+            if(height > 180 && price > 5000 && face > 500){
+                alert("这个必须嫁！")
+            } else if(height < 180 && price < 5000 && face < 500){
+                alert("这个万万不能嫁啊！")
+            } else{
+                alert("嫁了吧，比上不足，比下有余。")
+            }  
+        }
+        // var height=prompt("输入你的身高:");
+        // var price=prompt("输入你的身价:");
+        // var face=prompt("输入你的颜值:");
+        // marry(height, price, face);
+        function number_sort(a,b,c){
+            var max = min = middle = a;
+            if (b > a){
+                max = b;
+            } else if(b < a){
+                min = b;
+            } else {
+                max = min = a; //相等情况
+            }
+            if(c > max){
+                middle = max;
+                max = c;
+            } else if(c < min){
+                middle = min;
+                min = c;
+            } else if (c==max){
+                middle = max;
+            } else{
+                middle = min;
+            }
+            alert("三个数从小到大的顺序为："+min+", "+middle+", "+max);
+        }
+        // var a = prompt("第一个数");
+        // var b = prompt("第二个数");
+        // var c = prompt("第三个数");
+        // number_sort(a,b,c);
+        
+         </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam cupiditate accusantium perspiciatis molestiae quod quasi ipsa ipsum, soluta nihil rerum laborum debitis fuga magni iure. Impedit tempore ex vitae!</p>
+    <p>
+        链接样式：<a class="button_link" href="#">click me!</a>
+    </p>
+    <div>
+        这里是盒子内的实际内容。有 25px 内间距，25px 外间距、25px 绿色边框。
+    </div>
+    <div id="sticky">
+        我是粘性定位
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci rem aspernatur inventore facilis earum. Ratione, atque ab fugit harum tenetur veritatis aperiam dolorum placeat quas velit blanditiis, quibusdam cum.</p>
+    <p>Rerum accusamus, sit voluptates labore ab adipisci fuga, veritatis excepturi atque consequatur optio provident. Culpa quos ratione vero architecto laudantium mollitia nemo ut velit quis pariatur, eos voluptatem ex explicabo!</p>
+    <p>Magni soluta, minima laudantium ab sapiente vel! Numquam esse perferendis quisquam fugit assumenda alias voluptatum necessitatibus provident optio vel. Illo doloremque possimus est, ipsum provident cupiditate excepturi molestias autem. Itaque?</p>
+    <p>Repellendus delectus soluta voluptates consequatur. Quas, dolores. Mollitia placeat iusto magni deserunt laudantium laboriosam molestias ut non maxime? Exercitationem earum ipsam labore! Vero labore incidunt dolor laudantium temporibus rem eveniet.</p>
+</body>
+</html>
