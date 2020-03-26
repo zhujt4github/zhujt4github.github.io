@@ -1,0 +1,58 @@
+body{
+    /* background-color:beige;
+    background-image: url("../images/pheasant.png");
+    background-repeat:no-repeat;
+    background-position: 50% 200px;
+    background-attachment:fixed ; */
+    background: beige url("../images/heart.png") no-repeat 50% 200px fixed;
+}
+/* 
+p::first-line{
+    color:blue;
+}
+p::first-letter{
+    font-size: 40px;
+    
+} */
+
+p{
+    border:2px dashed red;
+}
+
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+div#sticky{
+    position: sticky;
+    top:0;
+    border:2px solid green;
+    width:90%;
+    height:20px;
+    cursor: move;
+}
+a{
+    border:3px solid green;
+    padding:20px;
+    margin:20px;
+}
+/* p a.button_link:link,a.button_link:visited{
+    text-decoration-line:none;
+    background-color: green;
+    border: 5px outset green;
+    margin-top:40px;
+    padding:10px 20px 5px 5px; 
+}
+
+p a.button_link:active{
+    text-decoration-line:none;
+    text-transform: none;
+    background-color: green;
+    color:white;
+    border: 5px inset green;
+    padding:10px;
+} */
